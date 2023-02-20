@@ -33,7 +33,7 @@ Run the local URL on the browser (probably http://127.0.0.1:7860)
 ```
 ## Image Generation
 
-When generating images, keep in mind that the prompt will be applied to each individual tile, not the entire image. For example, if you enter "man/woman," each tile will contain only a part of the skin of the person. Focus on quality tags, such as 8k, best quality, photography, cgi, and unreal engine.
+When generating images, keep in mind that the prompt will be applied to each individual tile, not the entire image. For example, if you enter "man/woman", you have to keep in mind each tile may only contain a part of the skin of the person. Focus on quality tags, such as 8k, best quality, photography, cgi, and unreal engine.
 
 Please note that Xformers is not currently working (at least on my end) for some reason. Any help regarding this would be appreciated.
 
