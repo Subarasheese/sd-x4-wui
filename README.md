@@ -44,5 +44,6 @@ Here are some items on our to-do list that we plan to address in the future:
 - [ ] Make additional optimizations that would enable users with low VRAM to upscale without aggressively increasing the number of tiles.
 - [ ] Create a Colab training notebook.
 - [ ] Find a way to make the tiles blend seamlessly, with no edges or artifacts.
+- [ ] Maybe adding support for negative prompts?
 - [ ] Make a port to the AUTOMATIC1111 Stable Diffusion web UI.
 
