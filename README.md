@@ -29,6 +29,7 @@ After installing the required packages, run the app with the following command:
 ```
 source venv/bin/activate
 python gradio_gui.py
+Run the local URL on the browser (probably http://127.0.0.1:7860)
 ```
 ## Image Generation
 
