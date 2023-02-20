@@ -16,6 +16,8 @@ Please feel free to open an issue or make a pull request if you would like to he
 Before running the app, you need to install the required packages by running the following commands:
 
 ```
+git clone https://github.com/Subarasheese/sd-x4-wui
+cd sd-x4-wui
 virtualenv venv
 source venv/bin/activate
 pip install -r requirements.txt
