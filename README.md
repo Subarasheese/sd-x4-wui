@@ -40,7 +40,7 @@ When generating images, keep in mind that the prompt will be applied to each ind
 Here are some items on our to-do list that we plan to address in the future:
 
 - [ ] Add a "save image" button. Also, add another button to save a half-sized version of the image, which reduces tiling artifact while still increasing the original resolution.
-- [ ] Fix Xformers, which are currently implemented but not working for some reason, at least on my end.
+- [ ] Fix Xformers, which is currently implemented but not working for some reason, at least on my end.
 - [ ] Make additional optimizations that would enable users with low VRAM to upscale without aggressively increasing the number of tiles.
 - [ ] Create a Colab training notebook.
 - [ ] Find a way to make the tiles blend seamlessly, with no edges or artifacts.
