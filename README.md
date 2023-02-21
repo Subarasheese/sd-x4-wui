@@ -21,6 +21,10 @@ Please feel free to open an issue or make a pull request if you would like to he
 
 Either keep all optimizations enabled, or increase the tiling grid.
 
+- I can see clear tiling edge artifacts in my uspcaled images.
+
+There is no easy solution for this as far as I know. It is currently being investigated, and if you have suggestions, feel free to talk about it on the Issues tab.
+
 - Will this be ported to AUTOMATIC1111?
 
 I would like to, but currently I lack the skills to do so. I don't know to to handle dependency install, for example. Please let me know how to do it, or if you can help with this endeavor, feel free to fork this and let us know.
@@ -70,4 +74,5 @@ Here are some items on our to-do list that we plan to address in the future:
 - [ ] Find a way to make the tiles blend seamlessly, with no edges or artifacts.
 - [X] ~~Add support for negative prompts~~
 - [ ] Make a port to the AUTOMATIC1111 Stable Diffusion web UI.
+- [ ] Allow batch image processing (upscale several images within a queue).
 
