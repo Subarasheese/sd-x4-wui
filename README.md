@@ -1,6 +1,6 @@
 # Stable Diffusion x4 Upscaler - Web UI
 
-![upscaler](image.png)
+![upscaler](image2.png)
 
 
 This is a Gradio Web UI version of the official SD x4 Upscaler (https://huggingface.co/stabilityai/stable-diffusion-x4-upscaler).
