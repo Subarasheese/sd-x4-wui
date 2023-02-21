@@ -12,6 +12,9 @@ To address this issue, I've designed a Gradio Web UI with options for memory eff
 But for instance, I am an RTX 3060 (12gb) user, and I successfully managed to upscale 1600x1200 (2.1mp) images using a single (1) tile with all optimizations on, so that means, I did not have to split the image into tiles for upscaling to work, however results my vary from card to card. Please let us know what your results are! 
 
 Please feel free to open an issue or make a pull request if you would like to help optimize the app to make lower use of VRAM or improve the Gradio GUI.
+
+Help will be needed to make an AUTOMATIC1111 port. If you can help with this endeavor, feel free to fork this and let us know.
+
 ## Usage
 ### Requirements
 
