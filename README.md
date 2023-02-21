@@ -35,14 +35,13 @@ Run the local URL on the browser (probably http://127.0.0.1:7860)
 
 When generating images, keep in mind that the prompt will be applied to each individual tile, not the entire image. For example, if you enter "man/woman", you have to keep in mind each tile may only contain a part of the skin of the person. Focus on quality tags, such as 8k, best quality, photography, cgi, and unreal engine.
 
-Please note that Xformers is not currently working (at least on my end) for some reason. Any help regarding this would be appreciated.
 
 ## To-Do List
 
 Here are some items on our to-do list that we plan to address in the future:
 
 - [ ] Add a "save image" button. Also, add another button to save a half-sized version of the image, which reduces tiling artifact while still increasing the original resolution.
-- [ ] Fix Xformers, which is currently implemented but not working for some reason, at least on my end.
+- [X] ~~Fix Xformers, which is currently implemented but not working for some reason, at least on my end.~~
 - [ ] Make additional optimizations that would enable users with low VRAM to upscale without aggressively increasing the number of tiles.
 - [ ] Create a Colab training notebook.
 - [ ] Find a way to make the tiles blend seamlessly, with no edges or artifacts.
