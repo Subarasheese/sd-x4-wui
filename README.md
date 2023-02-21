@@ -7,7 +7,9 @@ This is a Gradio Web UI version of the official SD x4 Upscaler (https://huggingf
 
 The Stable Diffusion x4 Upscaler is a powerful tool for upscaling images with impressive results. However, it requires a high VRAM GPU to function, making it difficult for users with consumer GPUs to use.
 
-To address this issue, I've designed a Gradio Web UI that slices the image into tiles, using a grid of squared sizes, to enable users with consumer GPUs to use the upscaler. The user can select a grid size, for example, of 1 (1x1), 2 (2x2), or 3 (3x3), which results in 1, 4, or 9 tiles, respectively.
+To address this issue, I've designed a Gradio Web UI with options for memory efficiency, and the possibility to slice the image into tiles, using a grid of squared sizes, to enable users with consumer GPUs to use the upscaler. The user can select a grid size, for example, of 1 (1x1), 2 (2x2), or 3 (3x3), which results in 1, 4, or 9 tiles, respectively.
+
+But for instance, I am an RTX 3060 (12gb) user, and I successfully managed to upscale 1600x1200 (2.1mp) images using a single (1) tile with all optimizations on, so that means, I did not have to split the image into tiles for upscaling to work, however results my vary from card to card. Please let us know what your results are! 
 
 Please feel free to open an issue or make a pull request if you would like to help optimize the app to make lower use of VRAM or improve the Gradio GUI.
 ## Usage
