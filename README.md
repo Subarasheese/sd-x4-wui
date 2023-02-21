@@ -18,12 +18,15 @@ Please feel free to open an issue or make a pull request if you would like to he
 ## FAQ
 
 - Will this be ported to AUTOMATIC1111?
+
 I would like to, but currently I lack the skills to do so. I don't know to to handle dependency install, for example. Please let me know how to do it, or if you can help with this endeavor, feel free to fork this and let us know.
 
 - What is even the point of this? The Ultimate SD Upscaler script does the job!!!1111!!!!
+
 In my humble opinion and according to my my experiments, this upscaler is superior to USU. It also works "out of the box", you don't even need to set denoising strength or anything like it. It is the official implementation by Stability AI.
 
 - It's not working on my machine nor has an AUTOMATIC1111 extension option that I can install in a few clicks, therefore this is garbage.
+
 I realize that Stable Diffusion became a consumer product really fast, and most of its users feel entitled and everything has to be easy and benefit them. But the truth is, I am just one guy with good will and little support and I don't have the expertise most devs from the ML do in terms of coding practices, UI design etc. If this does not work for you, please simply **let me know** and I will try to do my best help you to fix it.
 
 ## Usage
