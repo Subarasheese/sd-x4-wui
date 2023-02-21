@@ -17,6 +17,10 @@ Please feel free to open an issue or make a pull request if you would like to he
 
 ## FAQ
 
+- CUDA is constantly running out of memory for me.
+
+Either keep all optimizations enabled, or increase the tiling grid.
+
 - Will this be ported to AUTOMATIC1111?
 
 I would like to, but currently I lack the skills to do so. I don't know to to handle dependency install, for example. Please let me know how to do it, or if you can help with this endeavor, feel free to fork this and let us know.
