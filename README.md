@@ -23,7 +23,7 @@ I would like to, but currently I lack the skills to do so. I don't know to to ha
 
 - What is even the point of this? The Ultimate SD Upscaler script does the job!!!1111!!!!
 
-In my humble opinion and according to my my experiments, this upscaler is superior to USU. It also works "out of the box", you don't even need to set denoising strength or anything like it. It is the official implementation by Stability AI.
+In my humble opinion and according to my experiments, this upscaler is superior to USU. It also works "out of the box", you don't even need to set denoising strength or anything like it. It is the official implementation by Stability AI.
 
 - It's not working on my machine nor has an AUTOMATIC1111 extension option that I can install in a few clicks, therefore this is garbage.
 
