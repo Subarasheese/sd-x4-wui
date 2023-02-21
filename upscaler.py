@@ -58,7 +58,10 @@ def upscale_image(img, rows, cols,seed,prompt,xformers,cpu_offload,attention_sli
     else:
         pipeline.disable_xformers_memory_efficient_attention()
     if cpu_offload:
-        pipeline.enable_sequential_cpu_offload()
+        try:
+            pipeline.enable_sequential_cpu_offload()
+        except:
+            pass
     if attention_slicing:
         pipeline.enable_attention_slicing()
     else:
