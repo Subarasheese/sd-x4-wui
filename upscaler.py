@@ -6,12 +6,6 @@ import os
 import random
 
 
-
-model_id = "stabilityai/stable-diffusion-x4-upscaler"
-pipeline = StableDiffusionUpscalePipeline.from_pretrained(model_id, torch_dtype=torch.float16)
-pipeline = pipeline.to("cuda")
-
-
 def split_image(im, rows, cols, should_square, should_quiet=False):
     im_width, im_height = im.size
     row_width = int(im_width / cols)
@@ -52,7 +46,10 @@ def split_image(im, rows, cols, should_square, should_quiet=False):
             n += 1
     return [img for img in images]
 
-def upscale_image(img, rows, cols,seed,prompt,xformers,cpu_offload,attention_slicing):
+def upscale_image(img, rows, cols,seed,prompt,negative_prompt,xformers,cpu_offload,attention_slicing,enable_custom_sliders=False,guidance=7,iterations=50):
+    model_id = "stabilityai/stable-diffusion-x4-upscaler"
+    pipeline = StableDiffusionUpscalePipeline.from_pretrained(model_id, torch_dtype=torch.float16)
+    pipeline = pipeline.to("cuda")
     if xformers:
         pipeline.enable_xformers_memory_efficient_attention()
     else:
@@ -80,7 +77,10 @@ def upscale_image(img, rows, cols,seed,prompt,xformers,cpu_offload,attention_sli
     i = 0
     for x in tiles:
         i=i+1
-        ups_tile = pipeline(prompt=prompt, image=x.convert("RGB"),generator=generator).images[0]
+        if enable_custom_sliders:
+            ups_tile = pipeline(prompt=prompt,negative_prompt=negative_prompt,guidance_scale=guidance, num_inference_steps=iterations, image=x.convert("RGB"),generator=generator).images[0]
+        else:
+            ups_tile = pipeline(prompt=prompt,negative_prompt=negative_prompt, image=x.convert("RGB"),generator=generator).images[0]
         ups_tiles.append(ups_tile)
         
     # Determine the size of the merged upscaled image
