@@ -21,7 +21,7 @@ Please feel free to open an issue or make a pull request if you would like to he
 
 Either keep all optimizations enabled, or increase the tiling grid.
 
-- I can see clear tiling edge artifacts in my uspcaled images.
+- I see tiling edge artifacts in my uspcaled images.
 
 There is no easy solution for this as far as I know. It is currently being investigated, and if you have suggestions, feel free to talk about it on the Issues tab.
 
