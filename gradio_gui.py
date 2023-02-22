@@ -18,7 +18,7 @@ negative_prompt_input = gr.inputs.Textbox(default="jpeg artifacts, lowres, bad q
 seed_input = gr.inputs.Number(default=-1, label="Seed")
 row_input = gr.inputs.Number(default=1, label="Tile grid dimension amount (number of rows and columns) - v x v")
 xformers_input = gr.inputs.Checkbox(default=True,label="Enable Xformers memory efficient attention")
-enable_custom_sliders = gr.inputs.Checkbox(default=False,label="(NOT RECOMMENDED) Click to enable the options below; if unchecked, it will ignore them and use the default settings")
+enable_custom_sliders = gr.inputs.Checkbox(default=False,label="(NOT RECOMMENDED) Click to enable the sliders below; if unchecked, it will ignore them and use the default settings")
 cpu_offload_input = gr.inputs.Checkbox(default=True,label="Enable sequential CPU offload")
 attention_slicing_input = gr.inputs.Checkbox(default=True,label="Enable attention slicing")
 output_image = gr.outputs.Image(label="Output Image",type='pil')
