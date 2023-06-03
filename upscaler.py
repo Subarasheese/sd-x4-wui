@@ -48,7 +48,10 @@ def split_image(im, rows, cols, should_square, should_quiet=False):
 
 def upscale_image(img, rows, cols,seed,prompt,negative_prompt,xformers,cpu_offload,attention_slicing,enable_custom_sliders=False,guidance=7,iterations=50):
     model_id = "stabilityai/stable-diffusion-x4-upscaler"
-    pipeline = StableDiffusionUpscalePipeline.from_pretrained(model_id, torch_dtype=torch.float16)
+    try:
+        pipeline = StableDiffusionUpscalePipeline.from_pretrained(model_id, torch_dtype=torch.float16)
+    except:
+        pipeline = StableDiffusionUpscalePipeline.from_pretrained(model_id, torch_dtype=torch.float16, local_files_only=True)
     pipeline = pipeline.to("cuda")
     if xformers:
         pipeline.enable_xformers_memory_efficient_attention()
